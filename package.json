@@ -1,7 +1,7 @@
 {
   "name": "asyrafhussin",
-  "version": "1.0.0",
-  "description": "Asyraf Hussin (@asyrafhussin4)'s business card",
+  "version": "1.0.1",
+  "description": "Asyraf Hussin (@asyrafhussin)'s business card",
   "main": "index.js",
   "bin": {
     "asyrafhussin": "./bin/card.js"
