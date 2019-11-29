@@ -1,20 +1,20 @@
 {
-  "name": "mxstbr",
-  "version": "1.0.1",
-  "description": "Max Stoiber (@mxstbr)'s business card",
+  "name": "asyrafhussin",
+  "version": "1.0.0",
+  "description": "Asyraf Hussin (@asyrafhussin4)'s business card",
   "main": "index.js",
   "bin": {
-    "mxstbr": "./bin/card.js"
+    "asyrafhussin": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mxstbr/businesscard.git"
+    "url": "https://github.com/AsyrafHussin/businesscard.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],
-  "author": "Max Stoiber",
+  "author": "Asyraf Hussin",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
