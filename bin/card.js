@@ -3,6 +3,7 @@
 // 👆 Used to tell Node.js that this is a CLI tool Pull in our modules
 const chalk = require('chalk')
 const boxen = require('boxen')
+var qrcode = require('qrcode-terminal');
 
 // Define options for Boxen
 const options = {
@@ -14,30 +15,30 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white(' Asyraf Hussin'),
+  name: chalk.white(' Afi Hisam'),
   work: chalk.white('Full Stack Developer'),
-  twitter: chalk.cyan('twitter.com/asyrafhussin4'),
-  github: chalk.cyan('github.com/AsyrafHussin'),
-  codepen: chalk.cyan('codepen.io/AsyrafHussin'),
-  linkedin: chalk.cyan('linkedin.com/in/asyraf-hussin-834011a4'),
-  web: chalk.cyan('asyrafhussin.com'),
-  email: chalk.cyan('asyrafhussin4@gmail.com'),
-  npx: chalk.white('npx asyrafhussin'),
+  github: chalk.cyan('github.com/AfiHisam'),
+  linkedin: chalk.cyan('linkedin.com/in/afi-hisam-127aa7141'),
+  web: chalk.cyan('fcgb.com.my'),
+  email: chalk.cyan('afihisam@fcgb.com.my'),
+  mobile: chalk.cyan('(+6) 018-575 0527'),
+  phone: chalk.cyan('(+6) 03-8953 9661'),
+  npx: chalk.white('npx afihisam'),
   labelName: chalk
     .white
     .bold('      Name:'),
   labelWork: chalk
     .white
     .bold('      Work:'),
-  labelTwitter: chalk
-    .white
-    .bold('   Twitter:'),
   labelGitHub: chalk
     .white
     .bold('    GitHub:'),
-  labelCodepen: chalk
+  labelMobile: chalk
     .white
-    .bold('   CodePen:'),
+    .bold('    Mobile:'),
+  labelPhone: chalk
+    .white
+    .bold('     Phone:'),
   labelLinkedIn: chalk
     .white
     .bold('  LinkedIn:'),
@@ -56,16 +57,22 @@ const data = {
 const newline = '\n'
 const heading = `${data.labelName} ${data.name}`
 const working = `${data.labelWork}  ${data.work}`
-const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
-const codepening = `${data.labelCodepen}  ${data.codepen}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
 const webing = `${data.labelWeb}  ${data.web}`
 const emailing = `${data.labelEmail}  ${data.email}`
+const phone = `${data.labelPhone}  ${data.phone}`
+const mobile = `${data.labelMobile}  ${data.mobile}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen
 // effectively
-const output = heading + newline + working + newline + twittering + newline + githubing + newline + codepening + newline + linkedining + newline + webing + newline + emailing + newline + newline + carding
+const output = heading + newline + working + newline + githubing + newline + linkedining + newline + webing + newline + emailing + newline + phone + newline + mobile + newline + carding
 
-console.log(chalk.green(boxen(output, options)))
+qrcode.generate('https://github.com/AfiHisam', {small: true}, function (qrcode) {
+
+const output = heading + newline + working + newline + githubing + newline + linkedining + newline + webing + newline + emailing + newline + phone + newline + mobile + newline + carding
+
+  console.log(chalk.green(boxen(output, options),(boxen(qrcode, options))))
+
+});

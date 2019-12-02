@@ -1,24 +1,26 @@
 {
-  "name": "asyrafhussin",
-  "version": "1.0.1",
-  "description": "Asyraf Hussin (@asyrafhussin)'s business card",
+  "name": "afihisam",
+  "version": "1.0.2",
+  "description": "Afi Hisam (@afihisam)'s business card",
   "main": "index.js",
   "bin": {
-    "asyrafhussin": "./bin/card.js"
+    "afihisam": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AsyrafHussin/businesscard.git"
+    "url": "https://github.com/AfiHisam/businesscard.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "afihisam": "node ./bin/card.js"
   },
   "keywords": [],
-  "author": "Asyraf Hussin",
+  "author": "Afi Hisam",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
-    "chalk": "^2.4.1"
+    "chalk": "^2.4.1",
+    "qrcode-terminal": "^0.12.0"
   },
   "devDependencies": {
     "standard": "^12.0.1"

@@ -1,7 +1,7 @@
-It's me, Asyraf Hussin!
+It's me, Afi Hisam!
 
 # Usage
 
 ```
-npx asyrafhussin
+npx afihisam
 ```
