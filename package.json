@@ -1,6 +1,6 @@
 {
   "name": "afihisam",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "Afi Hisam (@afihisam)'s business card",
   "main": "index.js",
   "bin": {

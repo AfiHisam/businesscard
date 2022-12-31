@@ -16,11 +16,11 @@ const options = {
 // Text + chalk definitions
 const data = {
   name: chalk.white(' Afi Hisam'),
-  work: chalk.white('Full Stack Developer'),
+  work: chalk.white('Software Development Manager'),
   github: chalk.cyan('github.com/AfiHisam'),
   linkedin: chalk.cyan('linkedin.com/in/afi-hisam-127aa7141'),
-  web: chalk.cyan('fcgb.com.my'),
-  email: chalk.cyan('afihisam@fcgb.com.my'),
+  web: chalk.cyan('lekir.tech'),
+  email: chalk.cyan('afi@lekir.tech'),
   mobile: chalk.cyan('(+6) 018-575 0527'),
   phone: chalk.cyan('(+6) 03-8953 9661'),
   npx: chalk.white('npx afihisam'),
